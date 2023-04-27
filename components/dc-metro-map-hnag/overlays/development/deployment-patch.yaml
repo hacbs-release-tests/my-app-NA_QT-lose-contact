@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-hnag
+  namespace: user1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/hacbs-release-tests/user1-tenant/my-app/dc-metro-map-hnag@sha256:f7ffc10de8eb5b47c246bd43d8aa9e87a88fe9a9bc6e8c1d3f467b9a3b06086b
+        name: my-nodejs
+        resources: {}
+status: {}
